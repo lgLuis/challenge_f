@@ -66,6 +66,12 @@ https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.f
 
 }
 
+.sitio-color{
+    letter-spacing: 1px;
+    color: #120078;
+}
+
+
 
 .button-color{
     letter-spacing: 3px;
@@ -88,7 +94,12 @@ https://fonts.google.com/specimen/Playfair+Display?sidebar.open=true&selection.f
     margin-bottom: 1em;
 }
 
+.input-color{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 5px;
 
+}
 
 
 

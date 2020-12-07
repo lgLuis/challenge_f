@@ -48,13 +48,14 @@ class Search extends Component {
             <div>
                 <div className="card text-center">
                     <div className=" header-fondo">
-                        BUSCADOR DE SERIES
+                        BUSCADOR DE SERIES 
+                    <i class="far fa-smile-wink"></i>
                     </div>
                     <div className="card-body ppal">
                         <form onSubmit={this.handleSubmit}>
                             <label className="label-color" >INGRESE EL NOMBRE DE LA SERIE: </label>
                             <br />
-                            <input
+                            <input className="input-color"
                                 type="text"
                                 placeholder="por ejemplo ALF"
                                 value={this.state.serie}
@@ -65,13 +66,13 @@ class Search extends Component {
                             <br/>
                             <img src={this.state.image} alt={this.state.serie} title={this.state.serie}/>
                             <br/>
-                            <a href={this.state.link} target="_blank" className="label-color">SITIO WEB OFICIAL</a>
+                            <a href={this.state.link} target="_blank" className="sitio-color">SITIO WEB OFICIAL</a>
                             <br/>
                             <p>{this.state.resumen}</p>
                         </form>
                     </div>
                     <div className=" footer-fondo">
-                        Luis 2020
+                        Luis 2<i class="far fa-smile"></i>2<i class="far fa-smile"></i>
                     </div>
                 </div>
 
