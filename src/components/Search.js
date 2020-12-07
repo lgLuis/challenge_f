@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../css/Search.css'
 
 class Search extends Component {
     constructor(props) {
@@ -36,8 +37,6 @@ class Search extends Component {
     }
 
     handleSubmit = event =>{
-        var nose = this.state.name
-        console.log(nose)
         this.myAppi()
         event.preventDefault()
     }
@@ -64,10 +63,10 @@ class Search extends Component {
                             <br /> <br />
                             <button type="submit" className="btn btn-primary">BUSCAR</button>
                             <br/>
-
-                            <img src={this.state.image} alt=""/>
+                            <img src={this.state.image} alt={this.state.serie} title={this.state.serie}/>
                             <br/>
                             <a href={this.state.link} target="_blank">SITIO WEB OFICIAL</a>
+                            <br/>
                             <p>{this.state.resumen}</p>
                         </form>
                     </div>
