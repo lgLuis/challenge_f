@@ -47,12 +47,12 @@ class Search extends Component {
         return (
             <div>
                 <div className="card text-center">
-                    <div className="card-header">
+                    <div className=" header-fondo">
                         BUSCADOR DE SERIES
                     </div>
-                    <div className="card-body">
+                    <div className="card-body ppal">
                         <form onSubmit={this.handleSubmit}>
-                            <label>INGRESE EL NOMBRE DE LA SERIE: </label>
+                            <label className="label-color" >INGRESE EL NOMBRE DE LA SERIE: </label>
                             <br />
                             <input
                                 type="text"
@@ -61,17 +61,17 @@ class Search extends Component {
                                 onChange={this.handleName}
                             />
                             <br /> <br />
-                            <button type="submit" className="btn btn-primary">BUSCAR</button>
+                            <button type="submit" className="btn btn-dark button-color">BUSCAR</button>
                             <br/>
                             <img src={this.state.image} alt={this.state.serie} title={this.state.serie}/>
                             <br/>
-                            <a href={this.state.link} target="_blank">SITIO WEB OFICIAL</a>
+                            <a href={this.state.link} target="_blank" className="label-color">SITIO WEB OFICIAL</a>
                             <br/>
                             <p>{this.state.resumen}</p>
                         </form>
                     </div>
-                    <div className="card-footer text-muted">
-                        luis 2020
+                    <div className=" footer-fondo">
+                        Luis 2020
                     </div>
                 </div>
 
